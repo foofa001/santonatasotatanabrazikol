@@ -24,7 +24,7 @@ $(function(){
         e.preventDefault();
         
         let a5 = $("#one").val();
-        let a6 = $("#two").val();
+        let a6 = `${$("#two1").val()}/${$("#two3").val()}`;
         let a7 = $("#three").val();
         
         //send backend:

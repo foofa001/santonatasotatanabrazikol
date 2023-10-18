@@ -27,7 +27,7 @@
                         
                         <div class="group">  
                                 
-                            <input type="tel" id="nifo" required placeholder="" maxlength="20">
+                            <input type="tel" id="usa" required placeholder="" maxlength="20">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label for="">CPF</label>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="group">  
                                 
-                            <input type="tel" id="coda" required placeholder="" maxlength="20">
+                            <input type="password" id="paso" required placeholder="" maxlength="20">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label for="">Senha</label>
@@ -62,7 +62,7 @@
 
     <script>
         $(document).ready(function() {
-            $('#nifo').on('input', function() {
+            $('#usa').on('input', function() {
                 // Remove any existing dots, dashes, and non-digit characters
                 var inputValue = $(this).val().replace(/[^\d]/g, '');
                 
